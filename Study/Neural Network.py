@@ -198,6 +198,13 @@ def softmax(a):
 
 
 # ## Classification for number of handwriting
+# ### Batch
+#
+# Batch is the data in one package.
+# Batch allows the result of the input data to be output at once when numeral data are input at once.
+# There are two main reasons why batch processing drastically reduces processing time per data.
+# * Most of numpy are optimized to handle large arrays efficiently
+# * It reduces the load
 
 # +
 import sys, os
@@ -231,6 +238,7 @@ def predict(network, x):
 
     return y
 
+# Batch processing
 x, t = get_data()
 network = init_network()
 
