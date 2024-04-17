@@ -155,6 +155,7 @@ for i in range(iters_num):
 
 # +
 import matplotlib.pylab as plt
+import numpy as np
 
 markers = {'train': 'o', 'test': 's'}
 x = np.arange(len(train_acc_list))
